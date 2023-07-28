@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 30px;
+}
+.nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nav__item a {
+  text-decoration: none;
+}
+.nav__logout__btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.content {
+  /* margin: 0 30px; */
+  text-align: center;
+  margin-top: 3rem;
+}
