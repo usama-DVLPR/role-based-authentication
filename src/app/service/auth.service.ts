@@ -23,4 +23,14 @@ export class AuthService {
   updateUser(id: number, payload: any) {
     return this.http.put(`${this.baseAPI}/${id}`, payload);
   }
+
+  // getting data from sessionStorage
+  isLoggedIn() {
+    return sessionStorage.getItem('userName') != null;
+  }
+  getUserRole() {
+    return sessionStorage.getItem('role') != null
+      ? sessionStorage.getItem('role')?.toString()
+      : '';
+  }
 }

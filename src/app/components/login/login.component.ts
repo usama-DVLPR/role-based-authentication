@@ -19,6 +19,7 @@ export class LoginComponent {
     private _authService: AuthService,
     private router: Router
   ) {
+    sessionStorage.clear();
     this.loginForm = this.formBuilder.group({
       userName: ['', [Validators.required, Validators.minLength(5)]],
       password: ['', Validators.required],
@@ -34,10 +35,20 @@ export class LoginComponent {
           console.log(data);
           this.userData = data;
           if (this.userData.password === this.loginForm.value.password) {
-            this.toastr.success('Login successfully', 'Welcome', {
-              progressBar: true,
-              closeButton: true,
-            });
+            if (this.userData.isActive) {
+              sessionStorage.setItem('userName', this.userData.id);
+              sessionStorage.setItem('role', this.userData.role);
+              this.router.navigate(['']);
+              this.toastr.success('Login successfully', 'Welcome', {
+                progressBar: true,
+                closeButton: true,
+              });
+            } else {
+              this.toastr.error('Please Contact with ADMIN', 'Login Failed', {
+                progressBar: true,
+                closeButton: true,
+              });
+            }
           } else {
             this.toastr.error(
               'Username or Password is invalid',
