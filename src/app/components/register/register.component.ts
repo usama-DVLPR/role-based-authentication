@@ -37,13 +37,21 @@ export class RegisterComponent implements OnInit {
         .subscribe((data: any) => {
           console.log(data);
           this.toastr.success(
-            'User Registration Completed.',
-            'Please contact with ADMIN '
+            'Please contact with ADMIN ',
+            'Registerd Successfully',
+            {
+              progressBar: true,
+              closeButton: true,
+            }
           );
+
           this.router.navigate(['/login']);
         });
     } else {
-      this.toastr.warning('Please Enter Valid Data');
+      this.toastr.warning('Please Enter Valid Data', 'Registration Failed', {
+        progressBar: true,
+        closeButton: true,
+      });
     }
   }
 }

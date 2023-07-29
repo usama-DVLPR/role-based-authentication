@@ -4,7 +4,10 @@
   /* justify-content: center; */
   align-items: center;
 }
-
+.registration__form h2 {
+  width: 100%;
+  text-align: center;
+}
 .registration__form form mat-form-field,
 .registration__form form mat-radio-group {
   width: 33%;

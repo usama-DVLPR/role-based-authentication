@@ -6,6 +6,15 @@
       "password": "alpha@123",
       "email": "usama@gmail.com",
       "gender": "Male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "testaccount",
+      "name": "test name",
+      "password": "p2gm02890",
+      "email": "test@gmail.com",
+      "gender": "Male",
       "role": "",
       "isActive": false
     }

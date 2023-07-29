@@ -1,1 +1,34 @@
-<p>login works!</p>
+<mat-card class="registration__form">
+  <mat-card-header>
+    <h2>User Registration Form</h2>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Jhon" formControlName="userName" />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          placeholder="Password"
+          [type]="hide ? 'password' : 'text'"
+          formControlName="password"
+          required
+        />
+        <mat-icon matSuffix (click)="hide = !hide">{{
+          hide ? "visibility_off" : "visibility"
+        }}</mat-icon>
+      </mat-form-field>
+
+      <div class="btn">
+        <button mat-raised-button color="primary">Submit</button>
+        <a [routerLink]="['/register']" mat-raised-button color="accent"
+          >Back to Register</a
+        >
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
