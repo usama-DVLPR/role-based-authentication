@@ -35,7 +35,7 @@ export class RegisterComponent implements OnInit {
       this._authService
         .registerUser(this.registrationForm.value)
         .subscribe((data: any) => {
-          console.log(data);
+      
           this.toastr.success(
             'Please contact with ADMIN ',
             'Registerd Successfully',

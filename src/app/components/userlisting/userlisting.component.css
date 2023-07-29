@@ -1,0 +1,11 @@
+.tag {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 100px;
+}
+.inActive__tag {
+  background-color: #f44336;
+}
+.active__tag {
+  background-color: #3f51b5;
+}

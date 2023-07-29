@@ -1,0 +1,29 @@
+.registration__form form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.registration__form h2 {
+  width: 100%;
+  /* text-align: center; */
+}
+
+.registration__form form mat-form-field,
+.registration__form form mat-radio-group {
+  width: 33%;
+  text-align: justify;
+}
+.registration__form form .btn {
+  display: flex;
+  gap: 20px;
+  /* align-items: start; */
+  align-items: end;
+
+  justify-content: flex-end;
+}
+.example-full-width {
+  width: 100% !important;
+}

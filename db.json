@@ -8,6 +8,160 @@
       "gender": "Male",
       "role": "admin",
       "isActive": true
+    },
+    {
+      "id": "ahmadRaza",
+      "name": "Ahmad Raza",
+      "password": "alpha@123",
+      "email": "ahmad@gmail.com",
+      "gender": "Male",
+      "role": "sales",
+      "isActive": true
+    },
+    {
+      "id": "johnDoe",
+      "name": "John Doe",
+      "password": "johnDoe@123",
+      "email": "john.doe@example.com",
+      "gender": "Male",
+      "role": "sales",
+      "isActive": false
+    },
+    {
+      "id": "janeSmith",
+      "name": "Jane Smith",
+      "password": "janeSmith@456",
+      "email": "jane.smith@example.com",
+      "gender": "Female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "alexJohnson",
+      "name": "Alex Johnson",
+      "password": "alexJohnson@789",
+      "email": "alex.johnson@example.com",
+      "gender": "Male",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "saraWilliams",
+      "name": "Sara Williams",
+      "password": "saraWilliams@321",
+      "email": "sara.williams@example.com",
+      "gender": "Female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "michaelBrown",
+      "name": "Michael Brown",
+      "password": "michaelBrown@654",
+      "email": "michael.brown@example.com",
+      "gender": "Male",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "emilyDavis",
+      "name": "Emily Davis",
+      "password": "emilyDavis@987",
+      "email": "emily.davis@example.com",
+      "gender": "Female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "davidLee",
+      "name": "David Lee",
+      "password": "davidLee@654",
+      "email": "david.lee@example.com",
+      "gender": "Male",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "oliviaMartin",
+      "name": "Olivia Martin",
+      "password": "oliviaMartin@321",
+      "email": "olivia.martin@example.com",
+      "gender": "Female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "jamesWilson",
+      "name": "James Wilson",
+      "password": "jamesWilson@789",
+      "email": "james.wilson@example.com",
+      "gender": "Male",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "emmaAnderson",
+      "name": "Emma Anderson",
+      "password": "emmaAnderson@456",
+      "email": "emma.anderson@example.com",
+      "gender": "Female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "williamGarcia",
+      "name": "William Garcia",
+      "password": "williamGarcia@123",
+      "email": "william.garcia@example.com",
+      "gender": "Male",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "avaRodriguez",
+      "name": "Ava Rodriguez",
+      "password": "avaRodriguez@456",
+      "email": "ava.rodriguez@example.com",
+      "gender": "Female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "alexanderMartinez",
+      "name": "Alexander Martinez",
+      "password": "alexanderMartinez@789",
+      "email": "alexander.martinez@example.com",
+      "gender": "Male",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "miaHernandez",
+      "name": "Mia Hernandez",
+      "password": "miaHernandez@123",
+      "email": "mia.hernandez@example.com",
+      "gender": "Female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "ethanLopez",
+      "name": "Ethan Lopez",
+      "password": "ethanLopez@456",
+      "email": "ethan.lopez@example.com",
+      "gender": "Male",
+      "role": "",
+      "isActive": false
+    }
+  ],
+  "role": [
+    {
+      "code": "admin",
+      "name": "Admin"
+    },
+    {
+      "code": "sales",
+      "name": "Sales"
     }
   ]
 }
