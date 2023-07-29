@@ -1,3 +1,13 @@
 {
-  "user": []
+  "user": [
+    {
+      "id": "usamaHameed",
+      "name": "usama hameed",
+      "password": "alpha@123",
+      "email": "usama@gmail.com",
+      "gender": "Male",
+      "role": "",
+      "isActive": false
+    }
+  ]
 }

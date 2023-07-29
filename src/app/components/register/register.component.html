@@ -1,1 +1,54 @@
-<p>register works!</p>
+<mat-card class="registration__form">
+  <mat-card-header>
+    <h2>User Registration Form</h2>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="registrationForm" (ngSubmit)="registration()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Jhon" formControlName="id" />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Jhon Doe" formControlName="name" />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          placeholder="jhondeo@mail.com"
+          formControlName="email"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <!-- <input matInput placeholder="******" formControlName="password" /> -->
+        <input
+          matInput
+          placeholder="Password"
+          [type]="hide ? 'password' : 'text'"
+          formControlName="password"
+          required
+        />
+        <mat-icon matSuffix (click)="hide = !hide">{{
+          hide ? "visibility_off" : "visibility"
+        }}</mat-icon>
+      </mat-form-field>
+
+      <mat-radio-group formControlName="gender" aria-label="Select and Option">
+        <mat-radio-button value="Male">Male</mat-radio-button>
+        <mat-radio-button value="Female">Female</mat-radio-button>
+      </mat-radio-group>
+
+      <div class="btn">
+        <button mat-raised-button color="primary">Submit</button>
+        <a [routerLink]="['/login']" mat-raised-button color="accent"
+          >Back to login</a
+        >
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

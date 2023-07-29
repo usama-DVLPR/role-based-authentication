@@ -1,0 +1,20 @@
+.registration__form form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.registration__form form mat-form-field,
+.registration__form form mat-radio-group {
+  width: 33%;
+  text-align: justify;
+}
+.registration__form form .btn {
+  display: flex;
+  gap: 20px;
+  /* align-items: start; */
+  align-items: end;
+  width: 33%;
+  justify-content: flex-end;
+}
