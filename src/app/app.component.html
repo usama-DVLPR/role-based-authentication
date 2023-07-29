@@ -1,4 +1,4 @@
-<mat-toolbar>
+<mat-toolbar *ngIf="isMenuRequire">
   <nav>
     <div>
       <span>Authentication</span>
@@ -6,11 +6,11 @@
 
     <div class="nav__item">
       <a href="">Home</a>
-      <a href="">User</a>
+      <a [routerLink]="['/user']" routerLinkActive="router-link-active">User</a>
       <a href="">Customer</a>
       <a href="">Products</a>
       <form>
-        <button class="nav__logout__btn" type="submit">
+        <button (click)="logout()" class="nav__logout__btn" type="submit">
           <img src="../assets/logout-svgrepo-com.svg" alt="" />
         </button>
       </form>

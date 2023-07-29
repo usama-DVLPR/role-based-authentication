@@ -13,9 +13,10 @@ import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { UserlistingComponent } from './components/userlisting/userlisting.component';
 import { UpdatepopupComponent } from './components/updatepopup/updatepopup.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent, HomeComponent, UserlistingComponent, UpdatepopupComponent],
+  declarations: [AppComponent, LoginComponent, RegisterComponent, HomeComponent, UserlistingComponent, UpdatepopupComponent, PageNotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

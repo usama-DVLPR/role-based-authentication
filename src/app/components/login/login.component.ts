@@ -32,7 +32,7 @@ export class LoginComponent {
       this._authService
         .getUserById(this.loginForm.value.userName)
         .subscribe((data: any) => {
-          console.log(data);
+ 
           this.userData = data;
           if (this.userData.password === this.loginForm.value.password) {
             if (this.userData.isActive) {
