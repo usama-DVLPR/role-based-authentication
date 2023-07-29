@@ -5,15 +5,10 @@
     </div>
 
     <div class="nav__item">
-      <a href="">Home</a>
-      <a
-        [routerLink]="['/user']"
-        *ngIf="isAdmin"
-        routerLinkActive="router-link-active"
-        >User</a
-      >
-      <a href="">Customer</a>
-      <a href="">Products</a>
+      <a [routerLink]="['/']">Home</a>
+      <a [routerLink]="['/user']" *ngIf="isAdmin">User</a>
+      <a [routerLink]="['/']">Customer</a>
+      <a [routerLink]="['/']">Products</a>
       <form>
         <button (click)="logout()" class="nav__logout__btn" type="submit">
           <img src="../assets/logout-svgrepo-com.svg" alt="" />

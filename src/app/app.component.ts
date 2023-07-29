@@ -11,8 +11,12 @@ import { AuthService } from './service/auth.service';
 export class AppComponent implements DoCheck {
   title = 'authentication';
   isMenuRequire = false;
-  isAdmin=false
-  constructor(private _authService:AuthService,private router: Router, private toastr: ToastrService) {}
+  isAdmin = false;
+  constructor(
+    private _authService: AuthService,
+    private router: Router,
+    private toastr: ToastrService
+  ) {}
 
   ngDoCheck(): void {
     let currentUrl = this.router.url;
@@ -22,9 +26,11 @@ export class AppComponent implements DoCheck {
     } else {
       this.isMenuRequire = true;
     }
-    if(this._authService.getUserRole()==='admin'){
-      this.isAdmin=true
-    }else{this.isAdmin=false}
+    if (this._authService.getUserRole() === 'admin') {
+      this.isAdmin = true;
+    } else {
+      this.isAdmin = false;
+    }
   }
   logout() {
     sessionStorage.clear();
