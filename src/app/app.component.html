@@ -6,7 +6,12 @@
 
     <div class="nav__item">
       <a href="">Home</a>
-      <a [routerLink]="['/user']" routerLinkActive="router-link-active">User</a>
+      <a
+        [routerLink]="['/user']"
+        *ngIf="isAdmin"
+        routerLinkActive="router-link-active"
+        >User</a
+      >
       <a href="">Customer</a>
       <a href="">Products</a>
       <form>

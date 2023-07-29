@@ -25,7 +25,7 @@
       "email": "john.doe@example.com",
       "gender": "Male",
       "role": "sales",
-      "isActive": false
+      "isActive": true
     },
     {
       "id": "janeSmith",
@@ -156,8 +156,12 @@
   ],
   "role": [
     {
-      "code": "admin",
-      "name": "Admin"
+      "code": "manager",
+      "name": "Manager"
+    },
+    {
+      "code": "hr",
+      "name": "HR"
     },
     {
       "code": "sales",

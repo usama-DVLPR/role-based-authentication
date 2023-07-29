@@ -1,6 +1,7 @@
 import { Component, DoCheck } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { AuthService } from './service/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import { ToastrService } from 'ngx-toastr';
 export class AppComponent implements DoCheck {
   title = 'authentication';
   isMenuRequire = false;
-  constructor(private router: Router, private toastr: ToastrService) {}
+  isAdmin=false
+  constructor(private _authService:AuthService,private router: Router, private toastr: ToastrService) {}
 
   ngDoCheck(): void {
     let currentUrl = this.router.url;
@@ -20,6 +22,9 @@ export class AppComponent implements DoCheck {
     } else {
       this.isMenuRequire = true;
     }
+    if(this._authService.getUserRole()==='admin'){
+      this.isAdmin=true
+    }else{this.isAdmin=false}
   }
   logout() {
     sessionStorage.clear();

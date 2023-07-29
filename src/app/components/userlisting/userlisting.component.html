@@ -36,9 +36,14 @@
       <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef>Actions</th>
         <td mat-cell *matCellDef="let element">
-          <a (click)="updatePopup(element.id)" mat-raised-button color="primary"
-            >Update</a
+          <button
+            (click)="updatePopup(element.id)"
+            mat-raised-button
+            color="primary"
+            [disabled]="element.role === 'admin'"
           >
+            Update
+          </button>
         </td>
       </ng-container>
 
